@@ -732,7 +732,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column-reverse;
     width: 80%;
     margin: 20px auto;
     overflow: hidden;
@@ -1022,9 +1022,6 @@ p {
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
 
-    #header .hamburger {
-        display: none;
-    }
     
     .cta {
         font-size: 2.5rem;
