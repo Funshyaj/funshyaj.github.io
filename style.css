@@ -389,6 +389,10 @@ p {
     text-align: center;
 }
 
+h2.section-title {
+    font-size: 2rem;
+}
+
 .section-title span {
     color: crimson;
 }
@@ -721,6 +725,20 @@ p {
     margin-bottom: 50px;
 }
 
+#projects .projects-header-mini h2 {
+    margin-bottom: 10px;   
+    margin-top: 15px;
+}
+
+.see-more ul h4 {
+    font-size: 14px;
+}
+
+.see-more ul li{
+    font-size: 12px;
+    padding: 3px 0px;
+}
+
 #projects .all-projects {
     display: flex;
     align-items: center;
@@ -752,7 +770,7 @@ p {
 }
 
 #projects .project-info h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 500;
 }
 
@@ -1032,6 +1050,10 @@ p {
         font-size: 6rem;
     }
 
+    h2.section-title {
+        font-size: 4rem;
+    }
+
     /* Hero */
     #hero h1 {
         font-size: 7rem;
@@ -1046,6 +1068,13 @@ p {
 
     /* End Services Section */
     /* Project */
+
+    #projects .projects-header-mini h2 {
+        margin-bottom: 50px;   
+        margin-top: 50px;
+    }
+
+
     #projects .project-item {
         flex-direction: row;
     }
