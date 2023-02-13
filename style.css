@@ -314,6 +314,10 @@ p {
     margin: 0 auto;
 }
 
+#services .service-top p{
+  padding: 0px 10px;
+}
+
 #services .service-bottom {
     display: flex;
     align-items: center;
