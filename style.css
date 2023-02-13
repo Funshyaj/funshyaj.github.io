@@ -873,7 +873,10 @@ cursor: pointer;
 
 #about .col-right p {
     margin-bottom: 20px;
+    padding: 0px 10px;
+    text-align: justify;
 }
+
 
 #about .col-right .cta {
     color: black;
@@ -890,7 +893,7 @@ cursor: pointer;
     height: 100%;
     width: 100%;
     position: relative;
-    border: 10px solid white;
+    border: 10px solid rgb(41, 50, 60);
 }
 
 #about .col-left .about-img::after {
@@ -931,6 +934,14 @@ cursor: pointer;
     flex-direction: column;
     box-shadow: 0px 0px 18px 0 #0000002c;
     transition: 0.3s ease box-shadow;
+}
+
+#contact .contact-item:nth-child(1){
+    cursor: pointer;
+}
+
+#contact .contact-item:nth-child(2){
+    cursor: pointer;
 }
 
 #contact .contact-item:hover {
@@ -1130,6 +1141,9 @@ cursor: pointer;
 
     #about .col-right h1 {
         text-align: left;
+    }
+    #about .col-right p {
+        padding: 0px
     }
 
     /* End About */
