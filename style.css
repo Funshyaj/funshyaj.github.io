@@ -739,6 +739,10 @@ h2.section-title {
 cursor: pointer;
 }
 
+.see-more ul{
+    margin: 10px 0px;
+}
+
 .see-more ul h4 {
     font-size: 14px;
 }
@@ -748,11 +752,14 @@ cursor: pointer;
     padding: 3px 0px;
 }
 
+
+
 #projects .all-projects {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+ 
 }
 
 #projects .project-item {
@@ -1089,6 +1096,11 @@ cursor: pointer;
     /* End Services Section */
     /* Project */
 
+    
+#projects .all-projects {
+    margin: 0 20px;
+}
+
     #projects .projects-header-mini h2 {
         margin-bottom: 50px;   
         margin-top: 50px;
@@ -1114,9 +1126,34 @@ cursor: pointer;
         height: 100%;
     }
 
+
+    #projects .all-projects :nth-child(1) .project-info {
+    overflow-y: scroll;
+}
+
+ #projects .all-projects :nth-child(1) .project-info::-webkit-scrollbar {
+    width: 12px;
+}
+
+ #projects .all-projects :nth-child(1) .project-info::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); 
+    border-radius: 10px;
+}
+
+ #projects .all-projects :nth-child(1) .project-info::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); 
+}
+
     #projects .all-projects .project-img {
         height: 100%;
     }
+
+    #projects .all-projects .project-img img{
+        object-fit: contain;
+    }
+
+
 
     /* End Project */
     /* About */
@@ -1158,6 +1195,7 @@ cursor: pointer;
         align-items: center;
         justify-content: center;
         min-width: 20vh;
+        width: 95%;
     }
 
     #contact .contact-items {
@@ -1171,12 +1209,16 @@ cursor: pointer;
     #contact .contact-item {
         width: 30%;
         margin: 0;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 5px;
+
     }
 
     #contact .contact-item .icon {
         height: 100px;
         width: 100px;
+        margin: 0 0 10px;
     }
 
     #contact .contact-item .icon img {
@@ -1225,6 +1267,17 @@ cursor: pointer;
     #services .service-bottom .service-item {
         flex-basis: 22%;
         margin: 1.5%;
+    }
+
+    #contact .contact-item {
+        flex-direction: row;
+        align-items: center;
+        padding: 30px;
+
+    }
+
+    #contact .contact-item .icon {
+        margin: 0 auto;
     }
 }
 

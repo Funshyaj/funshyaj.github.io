@@ -13,20 +13,68 @@ document.addEventListener('scroll', () => {
 });
 
 
+
 // logic for see more button on projects
+// logic for first button
+
 const seeMoreBtn = document.querySelectorAll('.see-more-button');
+const seeMoreBtn1 = document.querySelector('.see-more-button1');
+
+
+seeMoreBtn1.addEventListener('click', () => {
+    let seeMore1 = seeMoreBtn1.nextElementSibling;
+    let parent = seeMoreBtn1.parentElement;
+
+  
+     if (seeMore1.style.display === 'none')
+     {
+        // if its a tablet or higher
+        if (window.outerWidth >= 768){
+            parent.style.paddingTop = '120px'
+        }
+        
+          // if its a PC
+          if (window.outerWidth >= 1024){
+            parent.style.paddingTop = '170px'
+        }
+        seeMore1.style.display = 'block' 
+      seeMoreBtn1.innerHTML = 'See less...' 
+        seeMoreBtn1.style.paddingBottom = '10px'
+   
+       
+     }
+   
+   else if (seeMore1.style.display === 'block'){
+       seeMoreBtn1.innerHTML = 'See more...'
+        seeMore1.style.display = 'none'
+        seeMoreBtn1.style.paddingBottom = '0px'
+        
+        if (window.outerWidth >= 768){
+           parent.style.paddingTop = '0px'
+       }
+        }
+   
+        })
+   
+
 
 seeMoreBtn.forEach(btn => {
    btn.addEventListener('click', () => {
+
 let seeMore = btn.nextElementSibling;
+let parent = btn.parentElement;
 if (seeMore.style.display === 'block'){
    btn.innerHTML = 'See more...'
     seeMore.style.display = 'none'
-    btn.style.paddingBottom = '0px'
     
 }
- else seeMore.style.display = 'block' , btn.innerHTML = 'See less...' ,  btn.style.paddingBottom = '10px'
+ else {seeMore.style.display = 'block' 
+  btn.innerHTML = 'See less...' 
+ }
 
 })
 })
+
+
+
     
