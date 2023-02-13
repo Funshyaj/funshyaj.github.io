@@ -904,7 +904,7 @@ cursor: pointer;
     height: 100%;
     width: 100%;
     position: relative;
-    border: 10px solid rgb(41, 50, 60);
+    border: 9px solid rgb(41, 50, 60);
 }
 
 #about .col-left .about-img::after {
@@ -914,7 +914,7 @@ cursor: pointer;
     top: 19px;
     height: 98%;
     width: 98%;
-    border: 7px solid crimson;
+    border: 8px solid crimson;
     z-index: -1;
 }
 
@@ -1145,6 +1145,24 @@ cursor: pointer;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); 
 }
 
+#projects .all-projects :nth-child(3) .project-info {
+    overflow-y: scroll;
+}
+
+ #projects .all-projects :nth-child(3) .project-info::-webkit-scrollbar {
+    width: 12px;
+}
+
+ #projects .all-projects :nth-child(3) .project-info::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); 
+    border-radius: 10px;
+}
+
+ #projects .all-projects :nth-child(3) .project-info::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); 
+}
+
     #projects .all-projects .project-img {
         height: 100%;
     }
@@ -1172,7 +1190,7 @@ cursor: pointer;
         top: 34px;
         height: 98%;
         width: 98%;
-        border: 10px solid crimson;
+        border: 9px solid crimson;
     }
 
     #about .col-right {
@@ -1268,7 +1286,13 @@ cursor: pointer;
         flex-basis: 22%;
         margin: 1.5%;
     }
+/* projects */
 
+#projects .all-projects .project-img img{
+    object-fit: cover;
+}
+
+/* end of projects */
     #contact .contact-item {
         flex-direction: row;
         align-items: center;

@@ -18,15 +18,16 @@ document.addEventListener('scroll', () => {
 // logic for first button
 
 const seeMoreBtn = document.querySelectorAll('.see-more-button');
-const seeMoreBtn1 = document.querySelector('.see-more-button1');
+const seeMoreBtn1 = document.querySelectorAll('.see-more-button1');
 
 
-seeMoreBtn1.addEventListener('click', () => {
-    let seeMore1 = seeMoreBtn1.nextElementSibling;
-    let parent = seeMoreBtn1.parentElement;
+seeMoreBtn1.forEach(btn => {
+btn.addEventListener('click', () => {
+    seeMore1 = btn.nextElementSibling;
+    let parent =btn.parentElement;
 
   
-     if (seeMore1.style.display === 'none')
+    if(seeMore1.style.display === 'none')
      {
         // if its a tablet or higher
         if (window.outerWidth >= 768){
@@ -37,17 +38,17 @@ seeMoreBtn1.addEventListener('click', () => {
           if (window.outerWidth >= 1024){
             parent.style.paddingTop = '170px'
         }
-        seeMore1.style.display = 'block' 
-      seeMoreBtn1.innerHTML = 'See less...' 
-        seeMoreBtn1.style.paddingBottom = '10px'
+    seeMore1.style.display = 'block' 
+      btn.innerHTML = 'See less...' 
+        btn.style.paddingBottom = '10px'
    
        
      }
    
    else if (seeMore1.style.display === 'block'){
-       seeMoreBtn1.innerHTML = 'See more...'
+       btn.innerHTML = 'See more...'
         seeMore1.style.display = 'none'
-        seeMoreBtn1.style.paddingBottom = '0px'
+        btn.style.paddingBottom = '0px'
         
         if (window.outerWidth >= 768){
            parent.style.paddingTop = '0px'
@@ -55,6 +56,7 @@ seeMoreBtn1.addEventListener('click', () => {
         }
    
         })
+    })
    
 
 
