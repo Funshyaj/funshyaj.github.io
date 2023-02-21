@@ -34,27 +34,28 @@ btn.addEventListener('click', () => {
      {
         // if its a tablet or higher
         if (window.outerWidth >= 768){
-            parent.style.paddingTop = '120px'
+            parent.style.paddingTop = '120px';
         }
         
           // if its a PC
-          if (window.outerWidth >= 1024){
-            parent.style.paddingTop = '170px'
-        }
-    seeMore1.style.display = 'block' 
-      btn.innerHTML = 'See less...' 
-        btn.style.paddingBottom = '10px'
+        else  if (window.outerWidth >= 1024){
+            parent.style.paddingTop = '170px';
+        };
+
+    seeMore1.style.display = 'block' ;
+      btn.innerHTML = 'See less...' ;
+        btn.style.paddingBottom = '10px';
    
        
      }
    
    else if (seeMore1.style.display === 'block'){
-       btn.innerHTML = 'See more...'
-        seeMore1.style.display = 'none'
-        btn.style.paddingBottom = '0px'
+       btn.innerHTML = 'See more...';
+        seeMore1.style.display = 'none';
+        btn.style.paddingBottom = '0px';
         
         if (window.outerWidth >= 768){
-           parent.style.paddingTop = '0px'
+           parent.style.paddingTop = '0px';
        }
         }
    
