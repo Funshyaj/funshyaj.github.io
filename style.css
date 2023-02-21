@@ -22,6 +22,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 img {
@@ -740,13 +741,13 @@ h2.section-title {
 .projects .project-info .see-more-button{
 cursor: pointer;
 color:crimson;
-font-size:12px;
+font-size:14px;
 }
 
 .projects .project-info .see-more-button1{
     cursor: pointer;
     color:crimson;
-    font-size:12px;
+    font-size:14px;
     }
 
 .see-more ul{
