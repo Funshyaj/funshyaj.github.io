@@ -34,12 +34,12 @@ btn.addEventListener('click', () => {
      {
         // if its a tablet or higher
         if (window.outerWidth >= 768){
-            // parent.style.paddingTop = '120px';
+            parent.style.paddingTop = '120px';
         }
         
           // if its a PC
         else  if (window.outerWidth >= 1024){
-            // parent.style.paddingTop = '120px';
+            parent.style.paddingTop = '170px';
         };
 
     seeMore1.style.display = 'block' ;
