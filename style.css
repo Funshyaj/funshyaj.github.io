@@ -76,13 +76,13 @@ h2.section-title {
     background-color: crimson;
 }
 
-.brand h1 {
-    font-size: 3rem;
+.brand h2 {
+    font-size: 2rem;
     text-transform: uppercase;
     color: white;
 }
 
-.brand h1 span {
+.brand h2 span {
     color: crimson;
 }
 
@@ -260,7 +260,7 @@ h2.section-title {
 #hero h1 {
     display: block;
     width: fit-content;
-    font-size: 4rem;
+    font-size: 3rem;
     position: relative;
     color: transparent;
     animation: text_reveal 0.5s ease forwards;
@@ -276,8 +276,14 @@ h2.section-title {
 }
 
 #hero h1:nth-child(3) {
-    animation: text_reveal_name 0.5s ease forwards;
+    animation: text_reveal_myName 0.5s ease forwards;
+    ;
     animation-delay: 3s;
+}
+
+#hero h1:nth-child(4) {
+    animation: text_reveal_name 0.5s ease forwards;
+    animation-delay: 4s;
 }
 
 #hero h1 span {
@@ -301,6 +307,10 @@ h2.section-title {
 
 #hero h1:nth-child(3) span {
     animation-delay: 2.5s;
+}
+
+#hero h1:nth-child(4) span {
+    animation-delay: 3.5s;
 }
 
 /* End Hero Section */
@@ -389,24 +399,24 @@ h2.section-title {
 }
 
 #projects .projects-header-mini h2 {
-    margin-bottom: 10px;   
+    margin-bottom: 10px;
     margin-top: 15px;
 }
 
 
-.projects .project-info .see-more-button{
-cursor: pointer;
-color:crimson;
-font-size:14px;
+.projects .project-info .see-more-button {
+    cursor: pointer;
+    color: crimson;
+    font-size: 14px;
 }
 
-.projects .project-info .see-more-button1{
+.projects .project-info .see-more-button1 {
     cursor: pointer;
-    color:crimson;
-    font-size:14px;
-    }
+    color: crimson;
+    font-size: 14px;
+}
 
-.see-more ul{
+.see-more ul {
     margin: 10px 0px;
 }
 
@@ -414,7 +424,7 @@ font-size:14px;
     font-size: 14px;
 }
 
-.see-more ul li{
+.see-more ul li {
     font-size: 12px;
     padding: 3px 0px;
 }
@@ -426,7 +436,7 @@ font-size:14px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
- 
+
 }
 
 #projects .project-item {
@@ -463,6 +473,14 @@ font-size:14px;
     margin-top: 10px;
 }
 
+#projects .project-info h2:first-child {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+
+
 #projects .project-info p {
     color: white;
 }
@@ -490,7 +508,7 @@ font-size:14px;
 }
 
 #projects .project-item:hover .project-img img {
-    transform: scale(1.1);  
+    transform: scale(1.1);
 }
 
 #projects .project-item .project-img .img-modal {
@@ -502,13 +520,13 @@ font-size:14px;
     right: 0;
     bottom: 0;
     height: 100%;
-    display:none;
+    display: none;
     justify-content: center;
     align-items: center;
     z-index: 2;
 }
 
-#projects .project-item .project-img .img-modal a{
+#projects .project-item .project-img .img-modal a {
     text-decoration: none;
     color: white;
     padding: 15px 25px;
@@ -516,7 +534,7 @@ font-size:14px;
     border-radius: 8px;
     border: 3px solid white;
     position: absolute;
-   text-align: center;
+    text-align: center;
 }
 
 #projects .project-item:hover .project-img .img-modal {
@@ -563,7 +581,7 @@ font-size:14px;
     font-size: 2rem;
 }
 
-#about .col-right .cta:hover{
+#about .col-right .cta:hover {
     color: white;
 }
 
@@ -614,11 +632,11 @@ font-size:14px;
     transition: 0.3s ease box-shadow;
 }
 
-#contact .contact-item:nth-child(1){
+#contact .contact-item:nth-child(1) {
     cursor: pointer;
 }
 
-#contact .contact-item:nth-child(2){
+#contact .contact-item:nth-child(2) {
     cursor: pointer;
 }
 
@@ -723,10 +741,16 @@ font-size:14px;
     }
 }
 
-@keyframes text_reveal_name {
+@keyframes text_reveal_myName {
     100% {
         color: crimson;
         font-weight: 500;
+    }
+}
+
+@keyframes text_reveal_name {
+    100% {
+        color: white;
     }
 }
 
@@ -734,7 +758,7 @@ font-size:14px;
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
 
-    
+
     .cta {
         font-size: 2.5rem;
         padding: 20px 60px;
@@ -750,7 +774,7 @@ font-size:14px;
 
     /* Hero */
     #hero h1 {
-        font-size: 7rem;
+        font-size: 4rem;
     }
 
     /* End Hero */
@@ -763,13 +787,13 @@ font-size:14px;
     /* End Services Section */
     /* Project */
 
-    
-#projects .all-projects {
-    margin: 0 20px;
-}
+
+    #projects .all-projects {
+        margin: 0 20px;
+    }
 
     #projects .projects-header-mini h2 {
-        margin-bottom: 50px;   
+        margin-bottom: 50px;
         margin-top: 50px;
     }
 
@@ -795,46 +819,46 @@ font-size:14px;
 
 
     #projects .all-projects :nth-child(1) .project-info {
-    overflow-y: scroll;
-}
+        overflow-y: scroll;
+    }
 
- #projects .all-projects :nth-child(1) .project-info::-webkit-scrollbar {
-    width: 12px;
-}
+    #projects .all-projects :nth-child(1) .project-info::-webkit-scrollbar {
+        width: 12px;
+    }
 
- #projects .all-projects :nth-child(1) .project-info::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); 
-    border-radius: 10px;
-}
+    #projects .all-projects :nth-child(1) .project-info::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+    }
 
- #projects .all-projects :nth-child(1) .project-info::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); 
-}
+    #projects .all-projects :nth-child(1) .project-info::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
 
-#projects .all-projects :nth-child(3) .project-info {
-    overflow-y: scroll;
-}
+    #projects .all-projects :nth-child(3) .project-info {
+        overflow-y: scroll;
+    }
 
- #projects .all-projects :nth-child(3) .project-info::-webkit-scrollbar {
-    width: 12px;
-}
+    #projects .all-projects :nth-child(3) .project-info::-webkit-scrollbar {
+        width: 12px;
+    }
 
- #projects .all-projects :nth-child(3) .project-info::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); 
-    border-radius: 10px;
-}
+    #projects .all-projects :nth-child(3) .project-info::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+    }
 
- #projects .all-projects :nth-child(3) .project-info::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); 
-}
+    #projects .all-projects :nth-child(3) .project-info::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
 
     #projects .all-projects .project-img {
         height: 100%;
     }
 
-    #projects .all-projects .project-img img{
+    #projects .all-projects .project-img img {
         object-fit: contain;
     }
 
@@ -868,6 +892,7 @@ font-size:14px;
     #about .col-right h1 {
         text-align: left;
     }
+
     #about .col-right p {
         padding: 0px
     }
@@ -924,6 +949,10 @@ font-size:14px;
 @media only screen and (min-width: 1200px) {
 
     /* header */
+    .brand h2 {
+        font-size: 3rem;
+    }
+
     #header .hamburger {
         display: none;
     }
@@ -947,30 +976,38 @@ font-size:14px;
     #header .nav-list ul a:after {
         display: none;
     }
+
+    /* Hero */
+    #hero h1 {
+        font-size: 7rem;
+    }
+
     /* End header */
 
- 
+
     #services .service-bottom .service-item {
         flex-basis: 22%;
         margin: 1.5%;
         min-height: 400px;
-        max-height:unset;
+        max-height: unset;
     }
-/* projects */
 
-#projects .all-projects .project-img img{
-    object-fit: cover;
-}
+    /* projects */
 
-#projects .all-projects .see-more-button, .see-more-button1{
-    font-size: 16px;
-}
+    #projects .all-projects .project-img img {
+        object-fit: cover;
+    }
 
-#projects .all-projects .see-more-button1{
-    font-size: 16px;
-}
+    #projects .all-projects .see-more-button,
+    .see-more-button1 {
+        font-size: 16px;
+    }
 
-/* end of projects */
+    #projects .all-projects .see-more-button1 {
+        font-size: 16px;
+    }
+
+    /* end of projects */
     #contact .contact-item {
         flex-direction: row;
         align-items: center;
