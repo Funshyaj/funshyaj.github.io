@@ -569,10 +569,21 @@ h2.section-title {
 
 #about .col-right p {
     margin-bottom: 20px;
-    padding: 0px 10px;
+    padding: 0px 20px;
     text-align: justify;
 }
 
+#about .col-right .role_tasks {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#about .col-right .role_tasks li {
+    font-size: 14px;
+    font-weight: 300;
+}
 
 #about .col-right .cta {
     color: black;
